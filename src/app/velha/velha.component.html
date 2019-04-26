@@ -1,0 +1,7 @@
+<div id="caixao" >
+    <div class="linha" [class.locked]="velhaLocked" *ngFor="let casa of velha"
+     class="casa" 
+     [class.checked]="casa.value != ''"
+     (click)="joguinho(this.casa)">
+        {{casa.value}}
+    </div>
